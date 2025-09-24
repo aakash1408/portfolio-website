@@ -1,8 +1,8 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
   <div class="navbar-logo">
     <span class="navbar-logo-circle">AC</span>
     <span class="navbar-logo-text">Portfolio</span>
-  </div>
+  </div> -->
   <!-- <ul class="navbar-links">
     <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
     <li><a routerLink="/about" routerLinkActive="active">About</a></li>
@@ -10,19 +10,46 @@
     <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
     <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
   </ul> -->
-  <ul class="navbar-links">
+  <!-- <ul class="navbar-links">
     <li><a (click)="scrollToSection('home')">Home</a></li>
     <li><a (click)="scrollToSection('about')">About</a></li>
     <li><a (click)="scrollToSection('projects')">Projects</a></li>
     <li><a (click)="scrollToSection('experience')">Experience</a></li>
-    <li><a (click)="scrollToSection('contact')">Contact</a></li>
+    <li><a (click)="scrollToSection('contact')">Contact</a></li> -->
     
     <!-- <li><a [routerLink]="['/']" fragment="home"><b>Home</b></a></li>
     <li><a [routerLink]="['/']" fragment="about"><b>About</b></a></li>
     <li><a [routerLink]="['/']" fragment="projects"><b>Projects</b></a></li>
     <li><a [routerLink]="['/']" fragment="experience"><b>Experience</b></a></li> -->
     <!-- <li><a [routerLink]="['/']" fragment="services">Services</a></li> -->
+  <!-- </ul>
+  <div class="navbar-contact">
+    <a routerLink="/contact-form" class="contact-btn">Contact</a>
+  </div>
+</nav> -->
+
+
+<nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-circle">AC</span>
+    <span class="navbar-logo-text">Portfolio</span>
+  </div>
+
+  <!-- Hamburger menu for mobile -->
+  <div class="navbar-toggle" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="navbar-links" [class.active]="menuOpen">
+    <li><a (click)="scrollToSection('home')">Home</a></li>
+    <li><a (click)="scrollToSection('about')">About</a></li>
+    <li><a (click)="scrollToSection('projects')">Projects</a></li>
+    <li><a (click)="scrollToSection('experience')">Experience</a></li>
+    <li><a (click)="scrollToSection('contact')">Contact</a></li>
   </ul>
+
   <div class="navbar-contact">
     <a routerLink="/contact-form" class="contact-btn">Contact</a>
   </div>

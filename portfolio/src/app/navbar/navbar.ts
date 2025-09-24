@@ -14,4 +14,10 @@ export class Navbar {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

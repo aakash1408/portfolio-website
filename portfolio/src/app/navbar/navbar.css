@@ -83,7 +83,7 @@
 
 
 
-
+/* 
 * {
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
@@ -245,4 +245,148 @@
 .navbar-links a:not(:first-child).active {
   color: #a259ff;
   font-weight: 600;
+} */
+
+
+
+/* General reset */
+* {
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 0 2rem;
+  height: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-circle {
+  background: linear-gradient(135deg, #a259ff, #7c3aed);
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.navbar-logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  color: #a259ff;
+  font-weight: 600;
+}
+
+/* Contact button */
+.navbar-contact .contact-btn {
+  background: #a259ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.navbar-contact .contact-btn:hover {
+  background: #5848d6;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(108, 99, 255, 0.3);
+}
+
+/* Hamburger toggle */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.navbar-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #222;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 900px) {
+  .navbar-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar-links.active {
+    max-height: 500px;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-links li a {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-contact {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
 }
