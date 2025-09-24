@@ -3,7 +3,6 @@ import { Navbar } from '../../navbar/navbar';
 import { Home } from '../home/home';
 import { About } from '../about/about';
 import { Projects } from '../projects/projects';
-import { Portfolio } from '../portfolio/portfolio';
 import { Contact } from '../contact/contact';
 import { Footer } from '../../footer/footer';
 import { Experience } from '../experience/experience';
