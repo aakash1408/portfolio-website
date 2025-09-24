@@ -47,11 +47,10 @@
 } */
 
 
-/* Footer Container */
-/* Footer Styles for Light Footer */
+
 .footer {
   width: 100%;
-  background-color: white; /* Light background */
+  background-color: white; 
   padding: 2rem 0 1.5rem 0;
   border-radius: 24px 24px 0 0;
   /* box-shadow: 0 -4px 16px rgba(162, 89, 255, 0.08); */
@@ -64,20 +63,20 @@
   gap: 1rem;
 }
 
-/* Logo */
+
 .footer-logo {
   font-size: 1.4rem;
   font-weight: 700;
   color: #6c63ff;
 }
 
-/* Copyright */
+
 .footer-copy {
   font-size: 0.95rem;
   color: #555;
 }
 
-/* Social Icons Container */
+
 .footer-social {
   display: flex;
   gap: 1.2rem;
@@ -91,29 +90,29 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #f0f0f0; /* subtle light circle */
+  background-color: #f0f0f0; 
   border-radius: 50%;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
-/* Social Images */
+
 .footer-social img {
-  width: 60%; /* Fit inside the circle */
+  width: 60%; 
   height: 60%;
-  object-fit: contain; /* Keep aspect ratio */
+  object-fit: contain; 
   filter: brightness(0) invert(0.15);
   transition: transform 0.3s, filter 0.3s;
 }
 
-/* Hover Effect */
+
 .footer-social a:hover img {
   transform: scale(1.2);
   filter: brightness(0) invert(0.35) sepia(1) hue-rotate(250deg);
 }
 
 .footer-social a:hover {
-  background-color: #eae0ff; /* Light purple background on hover */
+  background-color: #eae0ff; 
 }
 
 /* Responsive */

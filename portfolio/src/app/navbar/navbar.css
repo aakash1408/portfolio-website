@@ -83,7 +83,7 @@
 
 
 
-/* Global Navbar Styling */
+
 * {
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
@@ -91,7 +91,7 @@
   padding: 0;
 }
 
-/* Navbar Container */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@
   transition: background 0.3s, box-shadow 0.3s;
 }
 
-/* Navbar Logo */
+
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -134,43 +134,42 @@
   letter-spacing: 1px;
 }
 
-/* Navbar Links */
+
 .navbar-links {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
-/* Navbar Links with Purple Background */
+
 .navbar-links a {
   text-decoration: none;
-  color: #fff; /* White text */
+  color: #fff; 
   font-weight: 500;
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  background: #a259ff; /* Base purple background */
+  background: #a259ff; 
   transition: all 0.3s ease;
   position: relative;
 }
 
-/* Hover Effect */
+
 .navbar-links a:hover,
 .navbar-links a.active {
-  background: #5848d6; /* Darker purple on hover/active */
-  color: #fff;          /* Keep text white */
+  background: #5848d6; 
+  color: #fff;         
   font-weight: 600;
-  transform: translateY(-1px); /* Slight lift for effect */
+  transform: translateY(-1px); 
   box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
 }
 
-/* Remove previous underline pseudo-element */
+
 .navbar-links a::after {
   display: none;
 }
 
 
-/* Contact Button */
 .navbar-contact {
   margin-left: 2rem;
 }
@@ -193,38 +192,38 @@
   box-shadow: 0 8px 20px rgba(162, 89, 255, 0.25);
 }
 
-/* Navbar Links */
+
 .navbar-links a {
   text-decoration: none;
-  color: #222; /* Default text color for all links except Home */
+  color: #222; 
   font-weight: 500;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 12px; /* Rounded like the contact button */
+  border-radius: 12px; 
   transition: all 0.3s ease;
   position: relative;
-  background: transparent; /* Default no background */
+  background: transparent; 
 }
 
-/* Only Home Link Background */
+
 .navbar-links li:first-child a {
-  background: #a259ff; /* Purple background */
-  color: #fff;          /* White text */
+  background: #a259ff;
+  color: #fff;          
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
 }
 
-/* Hover Effect for Home link */
+
 .navbar-links li:first-child a:hover,
 .navbar-links li:first-child a.active {
-  background: #5848d6; /* Darker purple on hover/active */
+  background: #5848d6;
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(108, 99, 255, 0.3);
 }
 
-/* Contact Button */
+
 .contact-btn {
-  background: #a259ff; /* Purple background */
+  background: #a259ff; 
   color: #fff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -236,12 +235,12 @@
 }
 
 .contact-btn:hover {
-  background: #5848d6; /* Darker purple on hover */
+  background: #5848d6; 
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(108, 99, 255, 0.3);
 }
 
-/* Other Links Hover */
+
 .navbar-links a:not(:first-child):hover,
 .navbar-links a:not(:first-child).active {
   color: #a259ff;

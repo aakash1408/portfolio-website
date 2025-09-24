@@ -92,12 +92,11 @@
   background: #7c3aed;
 }
 
-/* Custom style for Download CV button */
-/* Purple-themed Download CV Button */
+
 .btn.secondary {
-  background-color: #6c63ff; /* Base purple */
-  border: 2px solid #6c63ff; /* Match background */
-  color: #fff; /* White text */
+  background-color: #6c63ff; 
+  border: 2px solid #6c63ff; 
+  color: #fff; 
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 12px;
@@ -109,19 +108,19 @@
 }
 
 .btn.secondary:hover {
-  background-color: #5848d6; /* Darker purple on hover */
+  background-color: #5848d6; 
   border-color: #5848d6;
-  transform: translateY(-2px); /* Slight lift */
-  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.35); /* Subtle purple shadow */
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.35); 
 }
 
-/* Optional icon inside button */
+
 .btn.secondary i {
   font-size: 1rem;
   transition: transform 0.3s ease;
 }
 
 .btn.secondary:hover i {
-  transform: translateX(4px); /* Slight slide on hover */
+  transform: translateX(4px); 
 }
 
