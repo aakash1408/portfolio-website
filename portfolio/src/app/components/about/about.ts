@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './about.css'
 })
 export class About {
-
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'https://raw.githubusercontent.com/aakash1408/portfolio-website/main/Aakash_Chauhan_CV.pdf';
+    link.download = 'Aakash_Chauhan_CV.pdf';
+    link.click();
+  }
 }

@@ -1,4 +1,4 @@
-/* Modern footer styles */
+/* Modern footer styles
 
 .footer {
 	width: 100%;
@@ -44,4 +44,90 @@
 
 .footer-social a:hover img {
 	transform: scale(1.15);
+} */
+
+
+/* Footer Container */
+/* Footer Styles for Light Footer */
+.footer {
+  width: 100%;
+  background-color: white; /* Light background */
+  padding: 2rem 0 1.5rem 0;
+  border-radius: 24px 24px 0 0;
+  /* box-shadow: 0 -4px 16px rgba(162, 89, 255, 0.08); */
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Logo */
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Social Icons Container */
+.footer-social {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Social Links */
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0; /* subtle light circle */
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Social Images */
+.footer-social img {
+  width: 60%; /* Fit inside the circle */
+  height: 60%;
+  object-fit: contain; /* Keep aspect ratio */
+  filter: brightness(0) invert(0.15);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+/* Hover Effect */
+.footer-social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) invert(0.35) sepia(1) hue-rotate(250deg);
+}
+
+.footer-social a:hover {
+  background-color: #eae0ff; /* Light purple background on hover */
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  .footer-social a {
+    width: 36px;
+    height: 36px;
+  }
+  .footer-social img {
+    width: 60%;
+    height: 60%;
+  }
+}
+

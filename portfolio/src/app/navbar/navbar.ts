@@ -8,5 +8,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.css'
 })
 export class Navbar {
-
+  scrollToSection(sectionId: string) {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

@@ -1,0 +1,14 @@
+.section-light {
+	background: #f9f9f9;
+	color: #222;
+}
+
+.section-dark {
+	background: #23223a;
+	color: #f3f3f3;
+}
+
+main > section {
+	padding: 0;
+	margin: 0;
+}

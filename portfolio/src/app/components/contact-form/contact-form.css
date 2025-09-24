@@ -1,0 +1,84 @@
+/* Contact Form Section */
+.contact-form-section {
+  max-width: 550px;
+  margin: 80px auto;
+  background: #1f1e33; /* Darker purple-ish background */
+  color: #f3f3f3;
+  padding: 40px 30px;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(162, 89, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(162, 89, 255, 0.25);
+}
+
+/* Section Title */
+.contact-form-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #a259ff;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #e0e0e0;
+}
+
+/* Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #2c2c3a; /* subtle border */
+  background: #181824;
+  color: #f3f3f3;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #a259ff;
+  box-shadow: 0 0 12px rgba(162, 89, 255, 0.3);
+}
+
+/* Submit Button */
+.contact-form-btn {
+  background: #6c63ff; /* Base purple */
+  color: #fff;
+  padding: 14px 0;
+  border-radius: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.contact-form-btn:hover {
+  background: #5848d6; /* Darker purple on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.35);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contact-form-section {
+    padding: 30px 20px;
+  }
+}

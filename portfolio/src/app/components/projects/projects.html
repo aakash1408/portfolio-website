@@ -1,1 +1,16 @@
-<p>projects works!</p>
+<section id="projects" class="projects-section">
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card" *ngFor="let project of projects">
+      <img *ngIf="project.imageUrl" [src]="project.imageUrl" [alt]="project.title" class="project-image" />
+      <div class="project-content">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        <a [href]="project.githubLink" target="_blank" class="btn github-btn">
+          <i class="fab fa-github"></i> View Repo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
